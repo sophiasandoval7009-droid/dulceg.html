@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dulce y Galleta — Misión y Visión">
+    <meta name="keywords" content="misión, visión, valores, dulce y galleta">
+    <meta name="author" content="Dulce y Galleta">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="es">
+    <title>Misión y Visión — DULCE Y GALLETA 🍪</title>
+    
+    <link rel="icon" href="https://via.placeholder.com/32/8B4513/FFFFFF?text=🍪">
+    <link rel="stylesheet" href="../CSS/estilos.css">
+</head>
+<body>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #e0f2ff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* --- ENCABEZADO --- */
+        header {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            height: 50px;
+            width: auto;
+        }
+
+        .nombre-empresa {
+            font-size: 26px;
+            animation: aparecer 1.5s ease-out;
+        }
+
+        /* --- MENÚ DE NAVEGACIÓN --- */
+        nav {
+            background-color: #333;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 17px;
+            padding: 8px 15px;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+
+        nav a:hover, nav a.activo {
+            background-color: #5ab4e6;
+            border-radius: 5px;
+        }
+
+        /* --- ANIMACIONES --- */
+        @keyframes aparecer {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes deslizar-izquierda {
+            from { opacity: 0; transform: translateX(-30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes flotar {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-8px); }
+            100% { transform: translateY(0px); }
+        }
+
+        @keyframes desvanecer {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes latido {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        /* --- SECCIONES GENERALES --- */
+        .seccion {
+            max-width: 900px;
+            margin: 0 auto 40px;
+            padding: 0 20px;
+            animation: aparecer 1.2s ease-out;
+        }
+
+        .titulo-animado {
+            text-align: center;
+            font-size: 32px;
+            margin: 30px 0 20px;
+            color: #2c5aa0;
+            animation: deslizar-izquierda 1.2s ease-out;
+        }
+
+        .texto-animado {
+            font-size: 16px;
+            color: #444;
+            margin-bottom: 18px;
+            line-height: 1.8;
+            opacity: 0;
+            animation: desvanecer 1s ease-out forwards;
+        }
+
+        .texto-animado:nth-child(2) { animation-delay: 0.2s; }
+        .texto-animado:nth-child(3) { animation-delay: 0.4s; }
+        .texto-animado:nth-child(4) { animation-delay: 0.6s; }
+        .texto-animado:nth-child(5) { animation-delay: 0.8s; }
+        .texto-animado:nth-child(6) { animation-delay: 1s; }
+
+        .caja {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+
+        .caja:hover {
+            transform: translateY(-5px);
+        }
+
+        .caja h3 {
+            color: #2c5aa0;
+            font-size: 23px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        /* --- CONTACTO --- */
+        .contacto-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+
+        .dato-contacto {
+            padding: 15px;
+        }
+
+        .dato-contacto h4 {
+            color: #e67e22;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .dato-contacto p {
+            font-size: 15px;
+            color: #555;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* --- RESPONSIVO --- */
+        @media (max-width: 768px) {
+            .banner h1 {
+                font-size: 32px;
+            }
+
+            .banner-galleta {
+                width: 180px;
+                height: 180px;
+            }
+
+            nav a {
+                margin: 5px;
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+<header>
+    <img src="../Multimedia/logo.png" alt="Logo DULCE Y GALLETA" class="logo">
+    <h1 class="nombre-empresa">DULCE Y GALLETA</h1>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="mision.html" class="activo">Misión y Visión</a>
+    <a href="productos.html">Productos</a>
+    <a href="precios.html">Precios y Equipo</a>
+    <a href="ubicacion.html">Ubicación</a>
+    <a href="contactos.html">Contactos</a>
+</nav>
+
+<main>
+    <section class="seccion">
+        <div class="caja">
+            <h2>Nuestra Misión</h2>
+            <p style="text-align: center; font-size: 17px; color: #444; line-height: 1.8;">
+                Ofrecer galletas artesanales de la más alta calidad, elaboradas con ingredientes naturales, masa madre y mucho cariño. Buscamos endulzar los momentos de nuestros clientes, brindando productos frescos, deliciosos y elaborados con procesos que respetan la tradición y el bienestar de quienes los consumen. Queremos ser parte de tus mejores momentos, compartiendo alegría y sabor en cada bocado.
+            </p>
+        </div>
+    </section>
+
+    <section class="seccion">
+        <div class="caja">
+            <h2>Nuestra Visión</h2>
+            <p style="text-align: center; font-size: 17px; color: #444; line-height: 1.8;">
+                Ser una empresa reconocida en Zapopan y sus alrededores por la calidad y sabor único de nuestras galletas artesanales. Queremos crecer de manera sostenible, manteniendo siempre nuestra esencia artesanal y el trato cercano con nuestros clientes. Aspiramos a expandir nuestra variedad de productos sin perder los valores que nos distinguen: honestidad, calidad y pasión por lo que hacemos.
+            </p>
+        </div>
+    </section>
+
+    <section class="seccion">
+        <div class="caja">
+            <h2>Nuestros Valores</h2>
+            <p style="font-size: 17px; color: #444; line-height: 2; text-align: center;">
+                <strong>Calidad:</strong> Solo usamos los mejores ingredientes disponibles.<br>
+                <strong>Honestidad:</strong> Transparencia en cada uno de nuestros procesos.<br>
+                <strong>Compromiso:</strong> Con nuestros clientes y con la comunidad.<br>
+                <strong>Pasión:</strong> Amamos lo que hacemos y se nota en cada galleta.<br>
+                <strong>Tradición:</strong> Respetamos recetas y técnicas artesanales.
+            </p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 DULCE Y GALLETA — Todos los derechos reservados</p>
+    <p>Zapopan, Jalisco | 📲 Síguenos en redes sociales</p>
+</footer>
+
+</body>
+</html>
